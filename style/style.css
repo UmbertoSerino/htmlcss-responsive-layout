@@ -20,9 +20,7 @@ ul li{
 .container-big{
     justify-content: space-between;
     align-items: center;
-    color: white;
     padding: 1rem;
-
 }
 
 .container-small{
@@ -33,6 +31,12 @@ ul li{
 
 header{
     background-color: #0084FD;
+    color: white;
+    padding: 1rem;
+}
+header .container-big {
+    justify-content: space-between;
+    align-items: center;
 }
 
 div.siderbar{
@@ -44,11 +48,6 @@ div.siderbar{
 
 /* Section Demo-Application */
 
-.demo-application{
-    display: flex;
-    flex-direction: column;
-}
-
 .container-card{
     border-radius: 2rem;
     justify-content: center;
@@ -57,40 +56,73 @@ div.siderbar{
 }
 
 
-div.card{
+article.card{
     height: 300px;
-    height: 300px;
-    margin: 1rem auto;
+    width: 100%;
     background-color: #B4DDFF;
 }
+
+/* Section Strategic Planning */
+
+section.bg-violet{
+    background-color: #9792E4;
+    color: white;
+    width: 100%;
+}
+
+div.bg-white{
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 /* Responsive > 576px */
 @media screen and (min-width:576px){
 
-    .demo-application{
-        display: flex;
-        flex-direction: row;
+    .container-big{
+        width: 576px;
+        margin: 0 auto;
     }
 
     .container-2x1{
         display: flex;
         width: 100%;
     }
-
-    div.card-70{
-        height: 300px;
-        width: 70%;
-        margin: 1rem auto;
+    article.card{
         background-color: #B4DDFF;
     }
 
-    div.card-30{
+    article.card-70{
         height: 300px;
-        width: 30%;
-        margin: 1rem auto;
-        background-color: #B4DDFF;
+        width: 67%;
+    }
+
+    article.card-30 {
+        height: 300px;
+        width: 33%;
+    }
+
+
+    .container-3x1{
+        display: flex;
+        width: calc(100 / 3);
     }
 
 }
@@ -98,7 +130,8 @@ div.card{
 
 /* Responsive > 1200px */
 @media screen and (min-width:768px){
-    header .container-big{
+    
+    .container-big{
         width: 768px;
         margin: 0 auto;
     }
@@ -110,8 +143,6 @@ div.card{
     div.little-menu{
         display: none;
     }
-
-
 
 }
     
