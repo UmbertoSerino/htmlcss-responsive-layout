@@ -14,9 +14,17 @@
     flex-direction: column;
 }
 
+ul li{
+    list-style-type: none;
+}
+
 /* Container */
 
 .container-big{
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem;
 
 }
 
@@ -26,9 +34,40 @@
 
 header{
     background-color: #0084FD;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
 }
+
+
+
+div.siderbar{
+    display: none;
+}
+
+
+/* Responsive > 576px */
+/* @media screen and (min-width:576px;){
+
+
+
+
+} */
+
+
+/* Responsive > 1200px */
+@media screen and (min-width:768px){
+    header .container-big{
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    div.siderbar{
+        display: block;
+    }
+
+    div.little-menu{
+        display: none;
+    }
+
+
+
+}
+    

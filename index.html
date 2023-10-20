@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive-layout</title>
     <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-        <header class="flex">
+        <header>
             <!-- Logo a sinistra + barra laterale a destra per mobile e tablet, nav + button per desktop in display none per gli altri dispositivi -->
-            <div>
-                Logo
+            <section class="container-big flex">
+                <div>
+                    Logo
+                </div>
+                <div class="little-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="siderbar">
+                    <ul class="flex">
+                        <li>Planning</li>
+                        <li>Testimonial</li>
+                        <li>Features</li>
+                        <li>About Us</li>
+                        <button>Get Started</button>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- <div class="siderbar">
+                <ul>
+                    <li></li>
+                </ul>
             </div>
-            <div>Barra</div>
         </header>
 
         <main>
