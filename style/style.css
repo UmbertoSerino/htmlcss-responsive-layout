@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 /* Multi selector */
 
 .flex{
@@ -30,7 +34,7 @@ ul li{
 .container-big{
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.5rem 2.5rem;
     margin-bottom: 2rem;
 }
 
@@ -83,18 +87,32 @@ article.card{
 article.card-white{
     background-color: white;
     color: black;
-    border-radius: 2rem;
+    border-radius: 3.5rem;
     text-align: center;
+}
+
+article.card-violet{
+    background-color: #9792E4;
+    border-radius: 3.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 2rem;
 }
 
 .button-violet{
     background-color:#9792E4;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 3rem;
 }
 
-
+i{
+    font-size: 1.3rem;
+}
 
 /* Section Strategic Planning */
 
@@ -109,6 +127,54 @@ div.bg-white{
 img{
     width: 100%;
 }
+
+/* SECTION TESTIMONIALS */
+
+section.testimonials{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div.testimonial{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+div.testimonial-1{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+
+div.testimonial-2{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+
+div.testimonial-3{
+    background-image: url(../img/testimonial3.jpg);
+}
+
+div.testimonial-4{
+    background-image: url(../img/about.jpg);
+}
+
+/* SECTIONS BENEFICTS */
+section.beneficts {
+    text-align: center;
+}
+
+/* Section ABOUT US */
+
+section.about-us img{
+    width: 30%;
+}
+
+
+
 
 /* Responsive > 576px */
 @media screen and (min-width:576px){
@@ -155,6 +221,26 @@ img{
 
     /* Section Strategic Planning */
 
+    /* Section Testimonials */
+    article.card-violet{
+        color: white;
+        flex-direction: row;
+    }
+
+    section.testimonials div.testimonial {
+        width: 250%;
+    }
+
+    /* Section Benefict */
+
+    section.beneficts div.container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.beneficts article.card-white{
+        width: calc(100% / 2);
+    }
 
 }
 
@@ -174,6 +260,17 @@ img{
     div.little-menu{
         display: none;
     }
+
+    section.beneficts article.card-white{
+        width: calc(100% / 3);
+    }
+
+/* SECTION TESTIMONIAL */
+section.testimonials div.testimonial {
+    width: 100%;
+}
+
+
 
 }
     
