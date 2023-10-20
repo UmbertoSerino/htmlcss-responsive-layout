@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid lime;
 }
 
 /* Multi selector */
@@ -15,15 +14,29 @@ ul li{
     list-style-type: none;
 }
 
+.bg-violet{
+    background-color: #9792E4;
+    color: white;
+    width: 100%;
+}
+
+.bg-black{
+    background-color: #333333;
+}
+
+
 /* Container */
 
 .container-big{
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .container-small{
+    width: 100%;
+    height: 400px;
 
 }
 
@@ -32,7 +45,6 @@ ul li{
 header{
     background-color: #0084FD;
     color: white;
-    padding: 1rem;
 }
 header .container-big {
     justify-content: space-between;
@@ -48,6 +60,10 @@ div.siderbar{
 
 /* Section Demo-Application */
 
+section.demo-application{
+    margin-bottom: 3.5rem;
+}
+
 .container-card{
     border-radius: 2rem;
     justify-content: center;
@@ -59,16 +75,29 @@ div.siderbar{
 article.card{
     height: 300px;
     width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
     background-color: #B4DDFF;
 }
 
+article.card-white{
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.button-violet{
+    background-color:#9792E4;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+
 /* Section Strategic Planning */
 
-section.bg-violet{
-    background-color: #9792E4;
-    color: white;
-    width: 100%;
-}
 
 div.bg-white{
     background-color: #ffffff;
@@ -77,25 +106,15 @@ div.bg-white{
 }
 
 
-
 img{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive > 576px */
 @media screen and (min-width:576px){
 
+    /* MAIN */
+    /* Section Demo Application */
     .container-big{
         width: 576px;
         margin: 0 auto;
@@ -103,12 +122,21 @@ img{
 
     .container-2x1{
         display: flex;
-        width: 100%;
-    }
-    article.card{
-        background-color: #B4DDFF;
+        width: calc(100% + 1rem);
     }
 
+    .container-3x1{
+        display: flex;
+        width: calc(100% + 1rem);
+
+    }
+
+    article.card{
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        background-color: #B4DDFF;
+    }
+    
     article.card-70{
         height: 300px;
         width: 67%;
@@ -119,11 +147,14 @@ img{
         width: 33%;
     }
 
-
     .container-3x1{
         display: flex;
         width: calc(100 / 3);
     }
+
+
+    /* Section Strategic Planning */
+
 
 }
 
