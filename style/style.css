@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Multi selector */
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+/* Container */
+
+.container-big{
+
+}
+
+.container-small{
+
+}
+
+header{
+    background-color: #0084FD;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
