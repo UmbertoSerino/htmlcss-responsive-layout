@@ -33,6 +33,18 @@ ul li{
     color: #0084FD;
 }
 
+.color-white{
+    color:#F5F4FC;
+}
+
+.color-violet{
+    color: #9792E4;
+}
+
+.color-gray{
+    color: #5A6E7F;
+}
+
 
 /* Container */
 
@@ -56,6 +68,7 @@ header{
     color: white;
     height: 95px;
     margin-bottom: 4rem;
+    padding: 3rem 0;
 }
 header .container-big {
     justify-content: space-between;
@@ -89,7 +102,9 @@ section.demo-application{
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 2.5rem;
+    padding: 2.5rem;    
+    color: #5A6E7F;
+
 }
 
 article.card{
@@ -105,25 +120,39 @@ section.demo-application h1{
     margin-bottom: 2rem;
 }
 
-section.demo-application p{
+p{
     line-height: 2.3rem;
     font-size: 1.2rem;
-    font-weight: bold;
     margin-bottom: 2rem;
-    color: black;
 }
 
-.button-blue{
-    background-color:#0084FD;
+.button{
     border: none;
     border-radius: 3rem;
     color: white;
     font-size: 1rem;
-    font-weight: bold;
+    cursor: pointer;
     padding: 1rem 2rem; 
+}
+
+.button-blue{
+    background-color:#0084FD;
+    font-weight: bold;
     width: 85%;
     letter-spacing: 4px;
-    cursor: pointer;
+}
+
+.button-violet{
+    background-color:#9792E4;
+    width: 40%;
+}
+
+.button-circular{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+    border: none;
 }
 
 .button-blue i{
@@ -151,6 +180,11 @@ section.demo-application img{
 .card-30 p,
 .container-3x1 p{
     text-align: center;
+    font-weight: bold;
+}
+
+.container-2x1 p{
+    font-weight: bold;
 }
 
 /* Section Strategic Planning */
@@ -192,25 +226,20 @@ section.strategic-planning p{
     padding:0 1.3rem;
 }
 
-.button-violet{
-    background-color:#9792E4;
-    border: none;
-    height: 60px;
-    width: 60px;
-    border-radius: 3rem;
-    cursor: pointer;
-    margin-bottom: 3rem;
+
+
+.button-circular i{
+    font-size: 1.35rem;
 }
 
-.button-violet i{
-    font-size: 1.35rem;
+section.strategic-planning article.card-white{
+    text-align: center;
 }
 
 article.card-white{
     background-color: white;
     color: black;
     border-radius: 3.5rem;
-    text-align: center;
 }
 
 article.card-violet{
@@ -239,14 +268,12 @@ section.testimonials h2{
     margin: 2rem;
 }
 
-h3.title-expert{
-    color: #9792E4;
 
-}
 
 section.testimonials h3{
     font-size: 2.9rem;
     margin-bottom: 3rem;
+    
 }
 
 section.testimonials p{
@@ -286,14 +313,38 @@ div.testimonial img{
 
 
 /* SECTIONS BENEFICTS */
-section.beneficts {
-    text-align: center;
+section.beneficts article.card-white{
+    background-color: white;
+    padding: 2rem;
+    color: black;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
 }
+
 
 section.beneficts h2{
     font-size: 2.8rem;
     padding: 5rem 0;
+    text-align: center;
 }
+section.beneficts h3{
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+    color:#9792E4;
+    
+}
+section.beneficts h4{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:#9792E4;
+}
+
+section.beneficts p{
+    color: #5A6E7F;
+    font-weight: bold;
+
+}
+
 
 
 /* Section ABOUT US */
