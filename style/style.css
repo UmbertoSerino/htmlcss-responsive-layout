@@ -22,7 +22,7 @@ ul li{
 .bg-violet{
     background-color: #9792E4;
     color: white;
-    width: 100%;
+    padding-bottom: .5rem;
 }
 
 .bg-black{
@@ -37,9 +37,9 @@ ul li{
 /* Container */
 
 .container-big{
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 2.5rem;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 0 2.5rem 3rem 2.5rem;
     margin-bottom: 2rem;
 }
 
@@ -54,18 +54,23 @@ ul li{
 header{
     background-color: #0084FD;
     color: white;
-    height: 77px;
-    margin-bottom: 1.58rem;
+    height: 95px;
+    margin-bottom: 4rem;
 }
 header .container-big {
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+}
+
+
+div.little-menu i{
+    font-size: 2rem;
 }
 
 div.siderbar{
     display: none;
 }
-
 
 button{
     padding: 0 .7rem;
@@ -78,7 +83,6 @@ button{
 /* Section Demo-Application */
 
 section.demo-application{
-    margin-bottom: 3.5rem;
 }
 
 .container-card{
@@ -97,13 +101,13 @@ article.card{
 
 section.demo-application h1{
     color: #0084FD;
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-bottom: 2rem;
 }
 
 section.demo-application p{
     line-height: 2.3rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 2rem;
     color: black;
@@ -207,7 +211,6 @@ article.card-white{
     color: black;
     border-radius: 3.5rem;
     text-align: center;
-    margin-bottom: 3.5rem;
 }
 
 article.card-violet{
@@ -218,7 +221,7 @@ article.card-violet{
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 /* SECTION TESTIMONIALS */
@@ -227,28 +230,52 @@ section.testimonials{
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
 section.testimonials h2{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: normal;
     margin: 2rem;
 }
 
-section.testimonials h3{
-    font-size: 2.5rem;
+h3.title-expert{
     color: #9792E4;
+
+}
+
+section.testimonials h3{
+    font-size: 2.9rem;
     margin-bottom: 3rem;
 }
+
+section.testimonials p{
+    font-size: 1.5rem;
+    line-height: 2.45rem;
+    margin-bottom: 3.5rem;
+}
+
 
 div.testimonial{
     border-radius: 50%;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
-
 }
+
+article.card-violet p{
+    font-size: 1.5rem;
+    line-height: 2.45rem;
+    margin-top: 1.7rem;
+    margin-bottom: 2.5rem;
+}
+
+article.card-violet span{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 
 div.testimonial img{
     width: 100%;
@@ -262,6 +289,12 @@ div.testimonial img{
 section.beneficts {
     text-align: center;
 }
+
+section.beneficts h2{
+    font-size: 2.8rem;
+    padding: 5rem 0;
+}
+
 
 /* Section ABOUT US */
 
