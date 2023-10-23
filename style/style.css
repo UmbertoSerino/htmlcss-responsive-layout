@@ -31,6 +31,7 @@ ul li{
 
 .bg-black{
     background-color: #333333;
+    color: white;
 }
 
 .color-blue{
@@ -52,7 +53,7 @@ ul li{
 
 /* Container */
 
-.container-big{
+.container-big {
     /* justify-content: center;
     align-items: center; */
     padding: 0 2.5rem 3rem 2.5rem;
@@ -60,9 +61,8 @@ ul li{
 }
 
 .container-small{
-    width: 100%;
-    height: 400px;
-
+    padding: 0 2.5rem 3rem 2.5rem;
+    margin-bottom: 2rem;
 }
 
 /* Header */
@@ -391,6 +391,8 @@ section.about-us p.color-violet{
 .button-small i{
     padding-right: 1rem;
 }
+
+/* Footer */
 
 
 
