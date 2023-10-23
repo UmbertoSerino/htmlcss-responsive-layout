@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
+
 }
 
 /* Multi selector */
@@ -26,6 +27,10 @@ ul li{
 
 .bg-black{
     background-color: #333333;
+}
+
+.color-blue{
+    color: #0084FD;
 }
 
 
@@ -49,6 +54,8 @@ ul li{
 header{
     background-color: #0084FD;
     color: white;
+    height: 77px;
+    margin-bottom: 1.58rem;
 }
 header .container-big {
     justify-content: space-between;
@@ -57,6 +64,10 @@ header .container-big {
 
 div.siderbar{
     display: none;
+}
+
+main h2{
+    color: #0084FD;
 }
 
 /* MAIN */
@@ -102,6 +113,11 @@ article.card-violet{
     padding: 2rem;
 }
 
+button{
+    padding: 0 .7rem;
+
+}
+
 .button-violet{
     background-color:#9792E4;
     border: none;
@@ -125,7 +141,7 @@ div.bg-white{
 
 
 img{
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* SECTION TESTIMONIALS */
@@ -137,30 +153,21 @@ section.testimonials{
 }
 
 div.testimonial{
-    width: 220px;
-    height: 220px;
     border-radius: 50%;
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+
 }
 
-div.testimonial-1{
-    background-image: url(../img/testimonial1.jpg);
+div.testimonial img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-
-div.testimonial-2{
-    background-image: url(../img/testimonial2.jpg);
-}
-
-
-div.testimonial-3{
-    background-image: url(../img/testimonial3.jpg);
-}
-
-div.testimonial-4{
-    background-image: url(../img/about.jpg);
-}
 
 /* SECTIONS BENEFICTS */
 section.beneficts {
@@ -168,10 +175,6 @@ section.beneficts {
 }
 
 /* Section ABOUT US */
-
-section.about-us img{
-    width: 30%;
-}
 
 
 
@@ -249,7 +252,7 @@ section.about-us img{
 @media screen and (min-width:768px){
     
     .container-big{
-        width: 768px;
+        width: 1200px;
         margin: 0 auto;
     }
 
