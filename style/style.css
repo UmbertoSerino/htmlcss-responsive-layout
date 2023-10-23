@@ -37,7 +37,7 @@ ul li{
 /* Container */
 
 .container-big{
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1.5rem 2.5rem;
     margin-bottom: 2rem;
@@ -71,8 +71,6 @@ button{
     padding: 0 .7rem;
 
 }
-
-
 
 /* MAIN */
 
@@ -168,6 +166,28 @@ img{
 
 /* SECTION STRATEGIC PLANNING */
 
+section.strategic-planning img{
+    margin-top: 4rem;
+}
+
+section.strategic-planning h2{
+    font-size: 2.7rem;
+    margin: 5rem 0 3.5rem 0;
+}
+
+section.strategic-planning h3{
+    font-size: 1.8rem;
+    margin: 1.3rem 0 1.5rem 0;
+}
+
+section.strategic-planning p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    padding:0 1.3rem;
+}
+
 .button-violet{
     background-color:#9792E4;
     border: none;
@@ -175,6 +195,11 @@ img{
     width: 60px;
     border-radius: 3rem;
     cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.button-violet i{
+    font-size: 1.35rem;
 }
 
 article.card-white{
@@ -182,6 +207,7 @@ article.card-white{
     color: black;
     border-radius: 3.5rem;
     text-align: center;
+    margin-bottom: 3.5rem;
 }
 
 article.card-violet{
@@ -201,6 +227,18 @@ section.testimonials{
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+section.testimonials h2{
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 2rem;
+}
+
+section.testimonials h3{
+    font-size: 2.5rem;
+    color: #9792E4;
+    margin-bottom: 3rem;
 }
 
 div.testimonial{
@@ -348,7 +386,7 @@ section.beneficts {
 
 /* Responsive > 1200px */
 @media screen and (min-width:768px){
-    
+   
     .container-big{
         width: 1200px;
         margin: 0 auto;
