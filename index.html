@@ -79,7 +79,7 @@
         <!-- Section Strategic Planning - sfondo viola full con 3 elementi di cui un bottone rotondo in desktop -->
         <section class="bg-violet strategic-planning">
             <div class="container-big">
-                <div>
+                <div class="card-violet">
                     <img src="./img/planning1.png" alt="picture woman with pc">
                     <h2>
                         Strategic Planning
@@ -111,7 +111,7 @@
                     <div class="testimonial">
                         <img src="./img/testimonial1.jpg" alt="smiles man">
                     </div>
-                    <div>
+                    <div class="info-testimonial">
                         <p><i class="fa-solid fa-quote-left"></i> Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin. <i class="fa-solid fa-quote-right"></i></p>
                         <span>NAT REYNOLDS</span>
                     </div>
@@ -120,7 +120,7 @@
                     <div class="testimonial">
                         <img src="./img/testimonial2.jpg" alt="smiles woman">
                     </div>
-                    <div>
+                    <div class="info-testimonial">
                         <p><i class="fa-solid fa-quote-left"></i> Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor purus non enim praesent elementum. <i class="fa-solid fa-quote-right"></i></p>
                         <span>CELIA ALMEDA</span>
                     </div>
@@ -129,7 +129,7 @@
                     <div class="testimonial">
                         <img src="./img/testimonial3.jpg" alt="smiles man with beard">
                     </div>
-                    <div>
+                    <div class="info-testimonial">
                         <p><i class="fa-solid fa-quote-left"></i> Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl condimentum id venenatis a condimentum. <i class="fa-solid fa-quote-right"></i></p>
                         <span>BOB ROBERTS</span>
                     </div>
@@ -155,25 +155,25 @@
                     </article>
                     <article class="card-white">
                         <h3>03</h3>
-                        <h4>Hight Quality</h3>
-                        <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent Semper feugiat nibh sed pulvinar proin id venenatis</p>  
+                        <h4>Amazing Results</h3>
+                        <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent Semper feugiat nibh sed pulvinar proin id venenatis.</p>  
                         <button class="button button-violet">more</button>                
                     </article>
                     <article class="card-white">
                         <h3>04</span>
-                        <h4>Hight Quality</h4>
+                        <h4>Best Pricing</h4>
                         <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent Semper feugiat nibh sed pulvinar proin id venenatis</p>  
                         <button class="button button-violet">more</button>                  
                     </article>
                     <article class="card-white">
                         <h3>05</h3>
-                        <h4>Hight Quality</h4>
+                        <h4>Innovations</h4>
                         <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent Semper feugiat nibh sed pulvinar proin id venenatis</p>    
                         <button class="button button-violet">more</button>              
                     </article>
                     <article class="card-white">
                         <h3>06</h3>
-                        <h4>Hight Quality</h4>
+                        <h4>24/7 Support</h4>
                         <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent Semper feugiat nibh sed pulvinar proin id venenatis</p>     
                         <button class="button button-violet">more</button>               
                     </article>
@@ -183,13 +183,13 @@
         <!-- About Us - titolo, testo affiancato a immagine cerchiata con testo sotto -->
         <section class="about-us container-big">
             <div>
-                <article>
+                <article class="about-us-card1">
                     <h2 class="color-violet">About Us</h3>
                     <p>Sample text. Click to Egestas estegas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra magna ac placerat vestibulum. Qyam lacus suspendisse faucibus interdum poseuere lorem. Egestas tellus rutrum tellus pellentesque eu tincidunt. Neque vitae tempus quam pellentesque nec. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Interdum velit euismod in pellentesque massa placerat duis.</p>
                     <br>
                     <p>Quis viverra nibh cras pulvinar mattis. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Pellentesue eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Dignissim diam quis enim lobortis scelerique. Tellus molestie nunc non blandit massa enim. The text box. Click anain or double click to start editing the text.</p>
                 </article>
-                <article class="p-relative">
+                <article class=" about-us-card2 p-relative">
                     <div class="testimonial">
                         <img src="./img/about.jpg" alt="picture main in smoking">
                         <i class="color-violet fa-solid fa-quote-left"></i>
@@ -199,24 +199,23 @@
                 </article>
             </div>
         </section>
-        <!-- Section Get Started - contanitore piccolo, testi + bottone -->
 
     </main>
             <!-- Section footer, contenitore piccolo, testi + link -->
     <footer>
         <section class="bg-violet">
             <div class="container-small">
-                <h2>GET STARTED</h2>
-                <h3>Simple, Transparent Pricing</h3>
-                <h4>It's Free!</h4>
+                <span>GET STARTED</span>
+                <h2>Simple, Transparent Pricing</h2>
+                <h3>It's Free!</h3>
                 <p>We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.</p>
-                <button class="button-white"></button>
-                <ul>
+                <button class="button button-white">Get Started</button>
+                <ul class="flex">
                     <li>
-                        Copiright 2021 Boolean
+                        Copiright 2021 Boolean &#8226;
                     </li>
                     <li>
-                        Classe XX
+                        Classe XX &#8226;
                     </li>
                     <li>
                         <a href="">Privacy policy</a>
@@ -226,9 +225,12 @@
         </section>
         <section class="bg-black">
             <div class="container-small">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate aliquam veritatis fugit sed laudantium alias consequatur libero sapiente provident a pariatur ab tempore necessitatibus aspernatur, praesentium perferendis enim natus.</p>
-
-                <a href="">Lorem ipsum</a><p>scelerisque mauris pellentesque</p><a href="">Boolean careers</a>
+                <div class="content-black">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores minima vitae vero nulla pariatur impedit!</span>
+                </div>
+                <div class="content-black">
+                    <a href="">Lorem ipsum </a><span>scelerisque mauris pellentesque</span> <a href="">Boolean careers</a>
+                </div>
             </div>
         </section>
     </footer>
