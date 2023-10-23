@@ -66,6 +66,7 @@ div.siderbar{
     display: none;
 }
 
+
 button{
     padding: 0 .7rem;
 
@@ -104,12 +105,11 @@ section.demo-application h1{
 
 section.demo-application p{
     line-height: 2.3rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: black;
 }
-
-
 
 .button-blue{
     background-color:#0084FD;
@@ -119,10 +119,12 @@ section.demo-application p{
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem 2rem; 
-    width: 80%;
+    width: 85%;
+    letter-spacing: 4px;
+    cursor: pointer;
 }
 
-i{
+.button-blue i{
     font-size: 1.3rem;
     margin-right: 1rem;
 }
@@ -130,6 +132,23 @@ i{
 section.demo-application img{
     position: relative;
     top: 2.8rem;
+}
+
+.container-card{
+    display: flex;
+    align-items: center;
+}
+
+.card-30 i, 
+.container-3x1 i{
+    font-size: 6rem;
+    color: #0084FD;
+    margin-bottom: 1.7rem;
+}
+
+.card-30 p,
+.container-3x1 p{
+    text-align: center;
 }
 
 /* Section Strategic Planning */
@@ -155,6 +174,7 @@ img{
     height: 60px;
     width: 60px;
     border-radius: 3rem;
+    cursor: pointer;
 }
 
 article.card-white{
@@ -216,8 +236,9 @@ section.beneficts {
     /* MAIN */
     /* Section Demo Application */
     .container-big{
-        width: 576px;
+        width: 100%;
         margin: 0 auto;
+        flex-grow: calc(1);
     }
 
     .container-2x1{
@@ -225,30 +246,80 @@ section.beneficts {
         width: calc(100% + 1rem);
     }
 
-    .container-3x1{
-        display: flex;
-        width: calc(100% + 1rem);
-
-    }
-
     article.card{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         margin-right: 1rem;
         background-color: #B4DDFF;
     }
+
+    .container-3x1 article.container-card{
+        display: flex;
+        align-items: center;
+        width: calc(100%);
+    }
+
     
     article.card-70{
-        width: 67%;
+        width: calc(66.6666667%);
     }
 
     article.card-30 {
-        width: 33%;
+        width: calc(33.333333%);
     }
 
-    .container-3x1{
-        display: flex;
-        width: calc(100 / 3);
+    section.demo-application{
+        margin-bottom: 3.5rem;
     }
+    
+    .container-card{
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    
+    section.demo-application h1{
+        color: #0084FD;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    section.demo-application p{
+        line-height: 1.7rem;
+        font-size: .9rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .button-blue{
+        background-color:#0084FD;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 60%;
+   
+    }
+        
+    section.demo-application img{
+        position: relative;
+        top: 2.8rem;
+        width: 65%;
+    }
+    
+    .container-3x1{
+        width: calc(100% + 1rem);
+        display: flex;
+    }
+
+    .container-3x1 .container-card{
+        width: calc(100% / 3);
+    }
+
+
+
 
 
     /* Section Strategic Planning */
@@ -259,9 +330,7 @@ section.beneficts {
         flex-direction: row;
     }
 
-    section.testimonials div.testimonial {
-        width: 250%;
-    }
+
 
     /* Section Benefict */
 
@@ -287,22 +356,61 @@ section.beneficts {
 
     div.siderbar{
         display: block;
+
+    }
+
+    div.siderbar li{
+        padding-right: 2rem;
+        height: 100%;
+        vertical-align: center;
+    }
+
+    ul{
+        align-items: center;
+    }
+
+    div.siderbar button{
+        border-radius: 2rem;
+        padding: .5rem 1rem;
+        border: none;
+        cursor: pointer;
+
     }
 
     div.little-menu{
         display: none;
     }
 
+
+
+
+
+    /* SECTION DEMO-APPLICATION */
+
+    article.card-70{
+        width: calc(66.6666667%);
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    section.demo-application img{
+        position: relative;
+        top: 2.8rem;
+        width: 100%;
+    }
+
+
     section.beneficts article.card-white{
         width: calc(100% / 3);
     }
+
 
 /* SECTION TESTIMONIAL */
 section.testimonials div.testimonial {
     width: 100%;
 }
-
-
 
 }
     
