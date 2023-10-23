@@ -19,15 +19,12 @@ body{
     position: relative;
 }
 
-
-
 ul li{
     /* list-style-type: none; */
 }
 
 ul li{
     list-style-type: none;
-
 }
 
 .bg-violet{
@@ -56,12 +53,9 @@ ul li{
     color: #5A6E7F;
 }
 
-
 /* Container */
 
 .container-big {
-    /* justify-content: center;
-    align-items: center; */
     padding: 0 2.5rem 3rem 2.5rem;
     margin-bottom: 2rem;
 }
@@ -86,7 +80,6 @@ header .container-big {
     height: 100%;
 }
 
-
 div.little-menu i{
     font-size: 2rem;
 }
@@ -101,12 +94,7 @@ button{
 }
 
 /* MAIN */
-
-
 /* Section Demo-Application */
-
-section.demo-application{
-}
 
 .container-card{
     border-radius: 2rem;
@@ -114,7 +102,6 @@ section.demo-application{
     flex-direction: column;
     padding: 2.5rem;    
     color: #5A6E7F;
-
 }
 
 article.card{
@@ -157,7 +144,6 @@ p{
     width: 50%;
     letter-spacing: 4px;
     font-weight: 800;
-
 }
 
 .button-circular{
@@ -210,22 +196,19 @@ section.demo-application img{
 
 /* Section Strategic Planning */
 
-
 div.bg-white{
     background-color: #ffffff;
     color: black;
     width: 100%;
 }
 
-
 img{
     width: 100%;
 }
 
-
 /* SECTION STRATEGIC PLANNING */
 
-div.card-violet img{
+section.strategic-planning article.card-violet img{
     margin-top: 5rem;
 }
 
@@ -251,7 +234,6 @@ article.card-white p {
     font-style: italic;
     font-weight: 600;
     font-size: 1.4rem;
-
 }
 
 .button-circular i{
@@ -302,7 +284,6 @@ section.testimonials h2{
 section.testimonials h3{
     font-size: 2.9rem;
     margin-bottom: 3rem;
-    
 }
 
 section.testimonials p{
@@ -356,12 +337,14 @@ section.beneficts h2{
     padding-top: 5rem;
     margin-bottom: 5rem;
 }
+
 section.beneficts h3{
     font-size: 3.8rem;
     margin-bottom: 1.7rem;
     color:#9792E4;
     
 }
+
 section.beneficts h4{
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -373,10 +356,7 @@ section.beneficts p{
     font-weight: bold;
     font-size: 1.2rem;
     line-height: 2rem;
-
 }
-
-
 
 /* Section ABOUT US */
 
@@ -456,7 +436,6 @@ footer a{
 
 section.bg-black{
     padding: 3rem 0;
-    
 }
 
 footer section.bg-black span{
@@ -479,13 +458,9 @@ footer section.bg-black a{
     padding: 0 3rem;
 }
 
-
-
-
 /* Responsive > 576px */
 @media screen and (min-width:576px){
 
-    /* MAIN */
     /* Section Demo Application */
     .container-big{
         width: 100%;
@@ -509,7 +484,6 @@ footer section.bg-black a{
         width: calc(100%);
     }
 
-    
     article.card-70{
         width: calc(66.6666667%);
     }
@@ -529,7 +503,6 @@ footer section.bg-black a{
         padding: 2.5rem;
     }
 
-    
     section.demo-application h1{
         color: #0084FD;
         font-size: 1.5rem;
@@ -551,7 +524,6 @@ footer section.bg-black a{
         font-weight: bold;
         letter-spacing: 2px;
         width: 85%;
-   
     }
         
     section.demo-application img{
@@ -570,7 +542,6 @@ footer section.bg-black a{
     }
 
     /* Section Strategic Planning */
-
     /* Section Testimonials */
     article.card-violet{
         color: white;
@@ -601,7 +572,6 @@ footer section.bg-black a{
         line-height: 2rem;
         margin: 2rem 0rem 1rem 1rem
     }
-
 
     /* Section Benefict */
 
@@ -653,21 +623,18 @@ footer section.bg-black a{
     section.about-us p.color-violet {
         line-height: 2.2rem;
         font-size: 1.9rem;
-
     }
-
 
 /* Responsive > 1200px */
 @media screen and (min-width:768px){
    
     .container-big{
-        max-width: 1200px;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
     div.siderbar{
         display: block;
-
     }
 
     div.siderbar li{
@@ -678,7 +645,6 @@ footer section.bg-black a{
 
     ul{
         align-items: center;
-
     }
 
     div.siderbar button{
@@ -686,16 +652,11 @@ footer section.bg-black a{
         padding: .5rem 1rem;
         border: none;
         cursor: pointer;
-
     }
 
     div.little-menu{
         display: none;
     }
-
-
-
-
 
     /* SECTION DEMO-APPLICATION */
 
@@ -713,16 +674,33 @@ footer section.bg-black a{
         width: 100%;
     }
 
+    /* Section STRATEGIC */
 
-    section.beneficts article.card-white{
-        width: calc(100% / 3);
+    section.strategic-planning div.container-big{
+        display: flex;
+    }
+    section.strategic-planning article.card-violet{
+        flex-direction: column;
+        width: 50%;
+    }
+    section.strategic-planning article.card-white{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        top: 200px;
+        left: 70px;
     }
 
 
-/* SECTION TESTIMONIAL */
-section.testimonials div.testimonial {
-    width: 50%;
-}
+    /* Section BENEFICTS */
+
+    section.beneficts article.card-white{
+        width: calc((100% / 3) - 2rem);
+    }
+
+
+
+
 
 }
     
