@@ -66,9 +66,12 @@ div.siderbar{
     display: none;
 }
 
-main h2{
-    color: #0084FD;
+button{
+    padding: 0 .7rem;
+
 }
+
+
 
 /* MAIN */
 
@@ -81,18 +84,77 @@ section.demo-application{
 
 .container-card{
     border-radius: 2rem;
-    justify-content: center;
-    align-items: center;
     display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
 }
 
-
 article.card{
-    height: 300px;
     width: 100%;
     margin-bottom: 2rem;
     margin-right: 1rem;
     background-color: #B4DDFF;
+}
+
+section.demo-application h1{
+    color: #0084FD;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.demo-application p{
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+
+.button-blue{
+    background-color:#0084FD;
+    border: none;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 2rem; 
+    width: 80%;
+}
+
+i{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+section.demo-application img{
+    position: relative;
+    top: 2.8rem;
+}
+
+/* Section Strategic Planning */
+
+
+div.bg-white{
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+}
+
+
+img{
+    width: 100%;
+}
+
+
+/* SECTION STRATEGIC PLANNING */
+
+.button-violet{
+    background-color:#9792E4;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 3rem;
 }
 
 article.card-white{
@@ -111,37 +173,6 @@ article.card-violet{
     align-items: center;
     color: white;
     padding: 2rem;
-}
-
-button{
-    padding: 0 .7rem;
-
-}
-
-.button-violet{
-    background-color:#9792E4;
-    border: none;
-    height: 60px;
-    width: 60px;
-    border-radius: 3rem;
-}
-
-i{
-    font-size: 1.3rem;
-}
-
-/* Section Strategic Planning */
-
-
-div.bg-white{
-    background-color: #ffffff;
-    color: black;
-    width: 100%;
-}
-
-
-img{
-    /* width: 100%; */
 }
 
 /* SECTION TESTIMONIALS */
@@ -207,12 +238,10 @@ section.beneficts {
     }
     
     article.card-70{
-        height: 300px;
         width: 67%;
     }
 
     article.card-30 {
-        height: 300px;
         width: 33%;
     }
 
